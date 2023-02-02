@@ -7,7 +7,7 @@ from utils_bot import *
 from Adarsh import StartTime
 
 
-START_TEXT = """ Your Telegram DC Is : `{}`  """
+START_TEXT = """ 𝙔𝙤𝙪𝙧 𝙏𝙚𝙡𝙚𝙜𝙧𝙖𝙢 𝘿𝘾 𝙄𝙨 : `{}`  """
 
 
 @StreamBot.on_message(filters.regex("𝐦𝐚𝐢𝐧𝐭𝐚𝐢𝐧𝐞𝐫𝐬😎"))
