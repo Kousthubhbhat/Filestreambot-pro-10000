@@ -16,8 +16,9 @@ from pyrogram.types import ReplyKeyboardMarkup
 if MY_PASS:
             buttonz=ReplyKeyboardMarkup(
             [
-                ["start⚡️","help📚","login🔑","DC"],
-                ["follow❤️","ping📡","status📊","maintainers😎"]
+                ["start⚡️","help📚"],
+                ["follow❤️","maintainers😎"],
+                ["ping📡","status📊","DC"]
                         
             ],
             resize_keyboard=True
@@ -25,8 +26,9 @@ if MY_PASS:
 else:
             buttonz=ReplyKeyboardMarkup(
             [
-                ["start⚡️","help📚","DC"],
-                ["follow❤️","ping📡","status📊","maintainers😎"]
+                ["start⚡️","help📚"],
+                ["follow❤️","maintainers😎"],
+                ["ping📡","status📊","DC"]
                         
             ],
             resize_keyboard=True
@@ -55,7 +57,7 @@ async def start(b, m):
         except UserNotParticipant:
              await StreamBot.send_photo(
                 chat_id=m.chat.id,
-                photo="https://telegra.ph/file/9d94fc0af81234943e1a9.jpg",
+                photo="https://telegra.ph/file/6bf5418ce30b3b8f89a3a.jpg",
                 caption="<i>𝙹𝙾𝙸𝙽 CHANNEL 𝚃𝙾 𝚄𝚂𝙴 𝙼𝙴🔐</i>",
                 reply_markup=InlineKeyboardMarkup(
                     [
@@ -76,7 +78,7 @@ async def start(b, m):
             return
     await StreamBot.send_photo(
         chat_id=m.chat.id,
-        photo ="https://telegra.ph/file/ca10e459bc6f48a4ad0f7.jpg",
+        photo ="https://telegra.ph/file/6bf5418ce30b3b8f89a3a.jpg",
         caption =f'Hi {m.from_user.mention(style="md")}!,\nI am Telegram File to Link Generator Bot with Channel support.\nSend me any file and get a direct download link and streamable link.!',
         reply_markup=buttonz)
 
@@ -103,7 +105,7 @@ async def help_handler(bot, message):
         except UserNotParticipant:
             await StreamBot.send_photo(
                 chat_id=message.chat.id,
-                photo="https://telegra.ph/file/ca10e459bc6f48a4ad0f7.jpg",
+                photo="https://telegra.ph/file/6bf5418ce30b3b8f89a3a.jpg",
                 Caption="**𝙹𝙾𝙸𝙽 𝚂𝚄𝙿𝙿𝙾𝚁𝚃 𝙶𝚁𝙾𝚄𝙿 𝚃𝙾 𝚄𝚂𝙴 ᴛʜɪs Bᴏᴛ!**\n\n__Dᴜᴇ ᴛᴏ Oᴠᴇʀʟᴏᴀᴅ, Oɴʟʏ Cʜᴀɴɴᴇʟ Sᴜʙsᴄʀɪʙᴇʀs ᴄᴀɴ ᴜsᴇ ᴛʜᴇ Bᴏᴛ!__",
                 reply_markup=InlineKeyboardMarkup(
                     [
@@ -128,8 +130,8 @@ async def help_handler(bot, message):
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("💁‍♂️ DEV", url="https://github.com/adarsh-goel")],
-                [InlineKeyboardButton("💥 Source Code", url="https://github.com/adarsh-goel/-pro/")]
+                [InlineKeyboardButton("💁‍♂️ 𝘿𝙀𝙑𝙀𝙇𝙊𝙋𝙀𝙍", url="https://telegram.me/CR_0O0")],
+                [InlineKeyboardButton("💥 𝗕𝗢𝗧 𝗖𝗛𝗔𝗡𝗡𝗘𝗟", url="https://telegram.me/DynoBots")]
             ]
         )
     )
